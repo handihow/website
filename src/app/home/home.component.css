@@ -1,0 +1,47 @@
+@media all and (min-width:800px){
+	.landing-image {
+		height: calc(85vh - 50px);
+		background: url('/assets/landing.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+h2, h4 {
+    color: white;
+}
+
+@media all and (max-width:800px){
+    .landing-image {
+        background: url('/assets/background_mobile_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+.about-handihow {
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+
+.button-row button,
+.button-row a {
+  margin-right: 8px;
+}
+
+
+
+

@@ -1,0 +1,49 @@
+.about-mobile {
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+@media all and (min-width:800px){
+	.mobile-image {
+		height: calc(60vh - 50px);
+		background: url('/assets/mobile_app_development.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+h2, h4 {
+    color: white;
+}
+
+@media all and (max-width:800px){
+    .mobile-image {
+        background: url('/assets/background_mobile_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+.progressive-web-applications{
+    padding:20px;
+}
+
+.native-mobile-applications{
+    padding:20px;
+}
+
+mat-card {
+    margin:10px;
+}

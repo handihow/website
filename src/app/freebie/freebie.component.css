@@ -1,0 +1,45 @@
+.about-earth-moon {
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+@media all and (min-width:800px){
+	.earth-moon-image {
+		height: calc(65vh - 50px);
+		background: url('/assets/earth_moon.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+h2, h4 {
+    color: white;
+}
+
+@media all and (max-width:800px){
+    .earth-moon-image {
+        background: url('/assets/background_mobile_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+mat-card{
+	margin: 20px;
+}
+
+a {
+	margin-right: 10px;
+}

@@ -1,0 +1,49 @@
+.about-web {
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+@media all and (min-width:800px){
+	.web-image {
+		height: calc(60vh - 50px);
+		background: url('/assets/web_development.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+}
+
+
+h2, h4 {
+    color: white;
+}
+
+@media all and (max-width:800px){
+    .web-image {
+        background: url('/assets/background_mobile_header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+.traditional-web-applications{
+    padding:20px;
+}
+
+.single-page-applications{
+    padding:20px;
+}
+
+mat-card {
+    margin:10px;
+}

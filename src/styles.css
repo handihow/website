@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.header-image-roeland {
+  background-image: url('/assets/roeland.jpg');
+  background-size: cover;
+}
+
+.under-construction {
+  background-image: url('/assets/under_construction.png');
+  background-size: cover;
+  height: 80vh;
+  margin: 10px;
+}
+
+.about-construction {
+	color:white;
+	max-width: 500px;
+	padding: 30px;
+	border-radius: 25px;
+}
+
+.header-image-angular {
+  background-image: url('/assets/angular.png');
+  background-size: cover;
+}
+
+.header-image-flutter {
+  background-image: url('/assets/flutter.jpg');
+  background-size: cover;
+}

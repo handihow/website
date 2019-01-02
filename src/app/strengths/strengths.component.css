@@ -1,0 +1,20 @@
+.strengths-weaknesses{
+  background: url('/assets/background_values.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section{
+  max-width:500px;
+  padding:20px;
+}
+
+mat-card{
+	max-width:500px;
+}
+
+
+h3 {
+	font-weight:normal;
+}
+

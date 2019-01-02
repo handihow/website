@@ -1,0 +1,23 @@
+.cards-portfolio{
+    margin: 10px;
+}
+
+.header-image-pillars {
+  background-image: url('/assets/logo_pillars.png');
+  background-size: cover;
+}
+
+.header-image-szapp {
+  background-image: url('/assets/logo_szapp.png');
+  background-size: cover;
+}
+
+.header-image-new {
+  background-image: url('/assets/light-bulb-yellow.png');
+  background-size: cover;
+}
+
+.header-image-luc {
+  background-image: url('/assets/well_done.png');
+  background-size: cover;
+}
