@@ -1,5 +1,6 @@
 # Handihow
 
+This project contains the public website of HandiHow company. If you like our website, feel free to copy the project and modify it to your needs!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
 ## Development server
