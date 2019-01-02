@@ -1,10 +1,15 @@
-@media all and (min-width:800px){
-	.landing-image {
-		height: calc(85vh - 50px);
-		background: url('/assets/landing.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+h2, h4 {
+    color: white;
+}
+
+/* desktop */
+@media all and (min-width:1024px){
+    .landing-image {
+        height: calc(85vh - 50px);
+        background: url('/assets/landing.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     h2 {
         font-size: 2.5em;
@@ -16,12 +21,26 @@
 
 }
 
+/* tablet */
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .landing-image {
+        height: calc(60vh - 50px);
+        background: url('/assets/landing.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-h2, h4 {
-    color: white;
+    h2 {
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
 }
 
-@media all and (max-width:800px){
+/* mobile phone */
+@media all and (max-width:768px){
     .landing-image {
         background: url('/assets/background_mobile_header.png');
         background-repeat: no-repeat;
