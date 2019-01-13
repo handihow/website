@@ -4,14 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
-import { EducationComponent } from './education/education.component';
+import { TermsComponent } from './terms/terms.component';
 import { FreebieComponent } from './freebie/freebie.component';
 
 const routes: Routes = [
 	{path: '', component: HomeComponent, pathMatch: "full" },
 	{path: 'web', component: WebComponent},
 	{path: 'mobile', component: MobileComponent},
-	{path: 'education', component: EducationComponent},
+	{path: 'terms', component: TermsComponent},
 	{path: 'freebie', component: FreebieComponent},
 	{path: "**", component: HomeComponent}
 ];

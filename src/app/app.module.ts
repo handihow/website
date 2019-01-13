@@ -15,12 +15,12 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { WebComponent } from './web/web.component';
 import { MobileComponent } from './mobile/mobile.component';
-import { EducationComponent } from './education/education.component';
 import { FooterComponent } from './footer/footer.component';
 import { ServicesComponent } from './services/services.component';
 import { StrengthsComponent } from './strengths/strengths.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FreebieComponent } from './freebie/freebie.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +30,12 @@ import { FreebieComponent } from './freebie/freebie.component';
     HomeComponent,
     WebComponent,
     MobileComponent,
-    EducationComponent,
     FooterComponent,
     ServicesComponent,
     StrengthsComponent,
     PortfolioComponent,
-    FreebieComponent
+    FreebieComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
