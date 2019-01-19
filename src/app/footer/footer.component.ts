@@ -1,4 +1,11 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, EventEmitter, Output } from '@angular/core';
+import {MatDialog} from '@angular/material';
+
+import { Observable } from 'rxjs';
+import { Store, select } from '@ngrx/store';
+import { Increment, Decrement, Reset } from '../counter.actions';
+
+import { ThirdSecretDialogComponent } from '../third-secret-dialog/third-secret-dialog.component';
 
 export interface Tile {
   color: string;
@@ -13,6 +20,8 @@ export interface Tile {
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+  
+  count: number;
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
@@ -22,10 +31,13 @@ export class FooterComponent implements OnInit {
   
   tiles: Tile[] = [];
 
-  constructor() { }
+  constructor(public dialog: MatDialog, private store: Store<{ count: number }>) { }
 
   ngOnInit() {
     this.setTiles(window.innerWidth);
+    this.store.pipe(select('count')).subscribe(count => {
+      this.count = count;
+    });
   }
 
   //set the displayed columns of the table depending on the size of the display
@@ -45,6 +57,20 @@ export class FooterComponent implements OnInit {
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
       ];
     }
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(ThirdSecretDialogComponent, {
+      width: '600px',
+      data: {secret: null}
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      if(result === 11){
+        this.store.dispatch(new Increment());
+      }
+      
+    });
   }
 
 }

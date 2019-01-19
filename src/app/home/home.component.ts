@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Store, select } from '@ngrx/store';
+import { Increment, Decrement, Reset } from '../counter.actions';
 
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  count: number;
 
-
-  constructor() { }
+  constructor(private store: Store<{ count: number }>) { }
 
   ngOnInit() {
+  	this.store.pipe(select('count')).subscribe(count => {
+  		this.count = count;
+  	});
   }
 
 }

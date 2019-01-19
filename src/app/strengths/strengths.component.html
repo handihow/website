@@ -9,26 +9,30 @@
 	  <mat-card-content>
 	    <h3>
 	      "HandiHow heeft uitgebreide ervaring met applicatie ontwikkeling voor het onderwijs. </h3>
-	      <h3>We werken op een zeer transparante wijze en bevorderen daarmee de samenwerking tussen scholen."</h3>
-	    <a mat-button routerLink="/terms">Onze prijzen</a>
+	    <h3>We werken op een zeer transparante wijze en bevorderen daarmee de samenwerking tussen scholen."</h3>
+	    <div *ngIf="count>1" fxLayout="row" fxLayoutAlign="center center">
+			<img src="/assets/stickers/bloem_blauw.png" 
+					class="secret animated jello delay-1s"
+					matTooltip="Gamification maakt leren leuk! Zoek nog een puzzel.">
+		</div>
 	  </mat-card-content>
+	  <mat-card-actions>
+	  	<button mat-icon-button *ngIf="count===1" (click)="openDialog()"><mat-icon>help_outline</mat-icon></button>
+	  	<a mat-button routerLink="/terms">Onze prijzen</a>
+	  </mat-card-actions>
 	  
 </mat-card>
-
 <section>
-		<p>Strategisch meedenken</p>
-		<mat-progress-bar color="accent" mode="determinate" value="96"></mat-progress-bar>
-		<p>Kennis en ervaring</p>
-		<mat-progress-bar color="accent" mode="determinate" value="92"></mat-progress-bar>
-		<p>Korte lijnen, toegewijd en praktisch</p>
-		<mat-progress-bar color="accent" mode="determinate" value="94"></mat-progress-bar>
-		<p>Werken in het openbaar op GitHub</p>
-		<mat-progress-bar color="accent" mode="determinate" value="100"></mat-progress-bar>
-		<p>Gebruik van de nieuwste technologie met hoge ontwikkelsnelheid</p>
-		<mat-progress-bar color="accent" mode="determinate" value="99"></mat-progress-bar>
-		<p>Ondersteuning van start tot oplevering</p>
-		<mat-progress-bar color="accent" mode="determinate" value="95"></mat-progress-bar>
-		<p>Waarna aanbod voor kosteneffectief onderhoud en doorontwikkeling</p>
-		<mat-progress-bar color="accent" mode="determinate" value="98"></mat-progress-bar>
+	<h3 *ngIf="competitionNumber>0">Aanbod van concurrent {{competitionNumber}}</h3>
+	<div *ngFor="let strength of strengths">
+		<p>{{strength.strength}}</p>
+		<mat-progress-bar color="{{strength.color}}" mode="determinate" value="{{strength.value}}"></mat-progress-bar>
+	</div>
+	<div fxLayout="row" fxLayoutAlign="center center">
+		<button mat-icon-button 
+				(click)="onRandomValues()"
+				matTooltip="Bekijk aanbod van concurrent"><mat-icon>cached</mat-icon></button>
+	</div>
 </section>
+
 </div>

@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counter.reducer';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
@@ -21,6 +24,9 @@ import { StrengthsComponent } from './strengths/strengths.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FreebieComponent } from './freebie/freebie.component';
 import { TermsComponent } from './terms/terms.component';
+import { FirstSecretDialogComponent } from './first-secret-dialog/first-secret-dialog.component';
+import { SecondSecretDialogComponent } from './second-secret-dialog/second-secret-dialog.component';
+import { ThirdSecretDialogComponent } from './third-secret-dialog/third-secret-dialog.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +41,10 @@ import { TermsComponent } from './terms/terms.component';
     StrengthsComponent,
     PortfolioComponent,
     FreebieComponent,
-    TermsComponent
+    TermsComponent,
+    FirstSecretDialogComponent,
+    SecondSecretDialogComponent,
+    ThirdSecretDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -44,8 +53,10 @@ import { TermsComponent } from './terms/terms.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    StoreModule.forRoot({ count: counterReducer })
   ],
+  entryComponents: [FirstSecretDialogComponent, SecondSecretDialogComponent, ThirdSecretDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
