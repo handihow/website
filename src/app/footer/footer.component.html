@@ -5,8 +5,8 @@
       [rowspan]="tile.rows"
       [style.background]="tile.color">
     <button mat-icon-button *ngIf="i==0 && count==2" (click)="openDialog()"><mat-icon>help_outline</mat-icon></button>
-    <div *ngIf="i==3 && count>2" class="sticker">
-		<img src="/assets/stickers/wow.png" 
+    <div *ngIf="i==0 && count>2" class="sticker">
+		<img src="/assets/stickers/gouden_ei.png" 
 				class="secret animated bounce delay-1s"
 				matTooltip="Super gedaan!">
 	</div>
