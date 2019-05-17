@@ -27,6 +27,7 @@ import { TermsComponent } from './terms/terms.component';
 import { FirstSecretDialogComponent } from './first-secret-dialog/first-secret-dialog.component';
 import { SecondSecretDialogComponent } from './second-secret-dialog/second-secret-dialog.component';
 import { ThirdSecretDialogComponent } from './third-secret-dialog/third-secret-dialog.component';
+import { SelfiespelComponent } from './selfiespel/selfiespel.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ThirdSecretDialogComponent } from './third-secret-dialog/third-secret-d
     TermsComponent,
     FirstSecretDialogComponent,
     SecondSecretDialogComponent,
-    ThirdSecretDialogComponent
+    ThirdSecretDialogComponent,
+    SelfiespelComponent
   ],
   imports: [
     BrowserModule,

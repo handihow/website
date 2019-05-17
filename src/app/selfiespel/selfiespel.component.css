@@ -1,0 +1,18 @@
+.selfiethegame {
+	margin: 10px;
+}
+
+.under-construction {
+  background-image: url('/assets/selfiethegame_logo.png');
+  background-size: cover;
+}
+
+.roadmap {
+  background-image: url('/assets/flutter.jpg');
+  background-size: cover;
+}
+
+.header-image-new {
+  background-image: url('/assets/light-bulb-yellow.png');
+  background-size: cover;
+}
