@@ -1,0 +1,25 @@
+
+<mat-card class="slideshow">
+	<mat-card-header>
+		<mat-card-title>
+			Vogelvlucht door SZAPP
+		</mat-card-title>
+		<mat-card-subtitle>
+			Gemaakt door HandiHow met Angular en Angular Material
+		</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-content>
+		<slideshow [height]="500"
+		           [minHeight]="'500px'"
+		           [autoPlay]="true"
+		           [showArrows]="true"
+		           [imageUrls]="images | async"
+		           [lazyLoad]="(images | async)?.length > 1"
+		           [autoPlayWaitForLazyLoad]="true">
+		</slideshow>
+	</mat-card-content>
+	<mat-card-actions>
+		<a routerLink="/" mat-button>TERUG</a>
+		<a href="https://szapp-c42bb.firebaseapp.com/" target="_blank" mat-button>SZAPP WEBSITE</a>
+	</mat-card-actions>
+</mat-card>

@@ -10,6 +10,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
 
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { environment } from '../environments/environment';
+import {SlideshowModule} from 'ng-simple-slideshow';
+
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
@@ -28,6 +34,9 @@ import { FirstSecretDialogComponent } from './first-secret-dialog/first-secret-d
 import { SecondSecretDialogComponent } from './second-secret-dialog/second-secret-dialog.component';
 import { ThirdSecretDialogComponent } from './third-secret-dialog/third-secret-dialog.component';
 import { SelfiespelComponent } from './selfiespel/selfiespel.component';
+import { PillarsComponent } from './pillars/pillars.component';
+import { SzappComponent } from './szapp/szapp.component';
+import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +55,10 @@ import { SelfiespelComponent } from './selfiespel/selfiespel.component';
     FirstSecretDialogComponent,
     SecondSecretDialogComponent,
     ThirdSecretDialogComponent,
-    SelfiespelComponent
+    SelfiespelComponent,
+    PillarsComponent,
+    SzappComponent,
+    SelfiethegameComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +68,11 @@ import { SelfiespelComponent } from './selfiespel/selfiespel.component';
     MaterialModule,
     AppRoutingModule,
     FlexLayoutModule,
-    StoreModule.forRoot({ count: counterReducer })
+    StoreModule.forRoot({ count: counterReducer }),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    SlideshowModule
   ],
   entryComponents: [FirstSecretDialogComponent, SecondSecretDialogComponent, ThirdSecretDialogComponent],
   providers: [],
