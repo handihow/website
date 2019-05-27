@@ -11,15 +11,40 @@
 	<mat-card-content>
 		<slideshow [height]="667"
 		           [minHeight]="'667px'"
-		           [autoPlay]="true"
+		           [autoPlay]="autoPlay"
+		           [autoPlayInterval]="4000"
+		           [stopAutoPlayOnSlide]="true"
 		           [showArrows]="true"
 		           [imageUrls]="images | async"
 		           [lazyLoad]="(images | async)?.length > 1"
-		           [autoPlayWaitForLazyLoad]="true">
+		           [autoPlayWaitForLazyLoad]="true"
+		           [captionBackground]="'rgba(0, 0, 0, 0.7)'">
 		</slideshow>
 	</mat-card-content>
 	<mat-card-actions>
-		<a routerLink="/" mat-button>TERUG</a>
-		<a href="https://selfiethegame.com" target="_blank" mat-button>WEBSITE</a>
+		<a 
+			routerLink="/" 
+			mat-icon-button
+			matTooltip="Terug">
+			<mat-icon>
+				arrow_back
+			</mat-icon>
+		</a>
+		<button 
+			mat-icon-button 
+			(click)="toggleAutoPlay()"
+			matTooltip="Slider instellen">
+			<mat-icon *ngIf="autoPlay">pause_circle_outline</mat-icon>
+			<mat-icon *ngIf="!autoPlay">play_circle_outline</mat-icon>
+		</button>
+		<a 
+			href="https://selfiethegame.com" 
+			target="_blank" 
+			mat-icon-button
+			matTooltip="SelfieTheGame Website">
+			<mat-icon>
+				open_in_new
+			</mat-icon>
+		</a>
 	</mat-card-actions>
 </mat-card>

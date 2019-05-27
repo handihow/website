@@ -10,12 +10,17 @@ import { Observable } from 'rxjs';
 export class SzappComponent implements OnInit {
 
   images: Observable<any[]>;
+  autoPlay: boolean = true;
 
   constructor(db: AngularFirestore) {
   	this.images = db.collection('images', ref => ref.where('reference', '==', 'szapp').orderBy('order')).valueChanges();
    }
 
   ngOnInit() {
+  }
+
+  toggleAutoPlay(){
+  	this.autoPlay = !this.autoPlay
   }
 
 }
