@@ -1,10 +1,10 @@
 <mat-sidenav-container>
-	<mat-sidenav #sidenav role="navigation">
+	<mat-sidenav #sidenav role="navigation" fixedInViewport="true">
 		<app-sidenav-list (closeSidenav)="sidenav.close()"></app-sidenav-list>
 	</mat-sidenav>
 	<mat-sidenav-content>
-		<app-header (sidenavToggle)="sidenav.toggle()"></app-header>
-		<main>
+		<app-header (sidenavToggle)="sidenav.toggle()" class="position-fixed mat-elevation-z2"></app-header>
+		<main class="position-under">
 			<router-outlet></router-outlet>		
 		</main>
 		<app-footer></app-footer>

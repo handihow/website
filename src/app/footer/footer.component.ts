@@ -48,6 +48,8 @@ export class FooterComponent implements OnInit {
         {text: 'Capelle aan den IJssel', cols: 1, rows: 2, color: '#E91E63'},
         {text: '+31647941981', cols: 1, rows: 1, color: '#E91E63'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
+        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#3F51B5'},
+        {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
       ];
     } else {
       this.tiles = [
@@ -55,6 +57,8 @@ export class FooterComponent implements OnInit {
         {text: 'Capelle aan den IJssel', cols: 2, rows: 1, color: '#E91E63'},
         {text: '+31647941981', cols: 2, rows: 1, color: '#E91E63'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
+        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#3F51B5'},
+        {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
       ];
     }
   }

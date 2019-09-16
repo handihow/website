@@ -58,7 +58,7 @@ import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component'
     SelfiespelComponent,
     PillarsComponent,
     SzappComponent,
-    SelfiethegameComponent
+    SelfiethegameComponent,
   ],
   imports: [
     BrowserModule,
