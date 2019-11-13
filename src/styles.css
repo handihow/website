@@ -6,12 +6,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .header-image-roeland {
-  background-image: url('/assets/roeland.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Froeland.jpg?alt=media&token=8f322eea-cae6-4967-8497-013103dfdaa9');
   background-size: cover;
 }
 
 .under-construction {
-  background-image: url('/assets/under_construction.png');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Funder_construction.png?alt=media&token=fc14e004-2423-4a5a-b4cc-b1a6d0b3dd88');
   background-size: cover;
   height: 80vh;
   margin: 10px;
@@ -25,12 +25,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .header-image-angular {
-  background-image: url('/assets/angular.png');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fangular.png?alt=media&token=f47102bd-a74b-410e-9f6d-db9726204af2');
   background-size: cover;
 }
 
 .header-image-flutter {
-  background-image: url('/assets/flutter.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fflutter.jpg?alt=media&token=3e8b09dd-dc2f-4658-959b-a5dd6ea8c921');
   background-size: cover;
 }
 

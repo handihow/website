@@ -9,6 +9,7 @@ import { FreebieComponent } from './freebie/freebie.component';
 import { PillarsComponent } from './pillars/pillars.component';
 import { SzappComponent } from './szapp/szapp.component';
 import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component';
+import { DvsComponent } from './dvs/dvs.component';
 
 const routes: Routes = [
 	{path: '', component: HomeComponent, pathMatch: "full" },
@@ -19,6 +20,7 @@ const routes: Routes = [
 	{path: 'pillars', component: PillarsComponent},
 	{path: 'szapp', component: SzappComponent},
 	{path: 'selfiethegame', component: SelfiethegameComponent},
+	{path: 'dvs', component: DvsComponent},
 	{path: "**", component: HomeComponent}
 ];
 

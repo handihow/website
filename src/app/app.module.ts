@@ -37,6 +37,7 @@ import { SelfiespelComponent } from './selfiespel/selfiespel.component';
 import { PillarsComponent } from './pillars/pillars.component';
 import { SzappComponent } from './szapp/szapp.component';
 import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component';
+import { DvsComponent } from './dvs/dvs.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component'
     PillarsComponent,
     SzappComponent,
     SelfiethegameComponent,
+    DvsComponent
   ],
   imports: [
     BrowserModule,
