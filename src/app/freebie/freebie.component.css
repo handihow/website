@@ -7,7 +7,7 @@
 @media all and (min-width:800px){
 	.earth-moon-image {
 		height: calc(65vh - 50px);
-		background: url('/assets/earth_moon.png');
+		background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FEarth%20moon.png?alt=media&token=2140b61f-c9fa-467f-af7c-a1de9166eef4');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -29,7 +29,7 @@ h2, h4 {
 
 @media all and (max-width:800px){
     .earth-moon-image {
-        background: url('/assets/background_mobile_header.png');
+        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FAchtergrond%20waarden%20Handihow.png?alt=media&token=b4fa5f62-379a-4fa0-b217-4cd4f6982371');
         background-repeat: no-repeat;
         background-size: cover;
     }

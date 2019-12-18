@@ -7,7 +7,7 @@
 @media all and (min-width:800px){
 	.web-image {
 		height: calc(60vh - 50px);
-		background: url('/assets/web_development.png');
+		background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FWeb%20Development.png?alt=media&token=8c9545dd-cec3-4121-9af6-2b6d259b2562');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -29,7 +29,7 @@ h2, h4 {
 
 @media all and (max-width:800px){
     .web-image {
-        background: url('/assets/background_mobile_header.png');
+        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FAchtergrond%20waarden%20Handihow.png?alt=media&token=b4fa5f62-379a-4fa0-b217-4cd4f6982371');
         background-repeat: no-repeat;
         background-size: cover;
     }

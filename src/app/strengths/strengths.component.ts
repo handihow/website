@@ -18,13 +18,13 @@ export class StrengthsComponent implements OnInit {
   
   count: number;
   strengths = [
-    {strength: "Strategisch meedenken", value: 96, color: "accent"},
-    {strength: "Kennis en ervaring", value: 92, color: "accent"},
-    {strength: "Korte lijnen, toegewijd en praktisch", value: 94, color: "accent"},
-    {strength: "Werken in het openbaar op GitHub", value: 100, color: "accent"},
-    {strength: "Gebruik van de nieuwste technologie met hoge ontwikkelsnelheid", value: 99, color: "accent"},
-    {strength: "Ondersteuning van start tot oplevering", value: 95, color: "accent"},
-    {strength: "Waarna aanbod voor kosteneffectief onderhoud en doorontwikkeling", value: 98, color: "accent"}
+    {strength: "Strategisch meedenken", value: 96, color: "primary"},
+    {strength: "Kennis en ervaring", value: 92, color: "primary"},
+    {strength: "Korte lijnen, toegewijd en praktisch", value: 94, color: "primary"},
+    {strength: "Werken in het openbaar op GitHub", value: 100, color: "primary"},
+    {strength: "Gebruik van de nieuwste technologie met hoge ontwikkelsnelheid", value: 99, color: "primary"},
+    {strength: "Ondersteuning van start tot oplevering", value: 95, color: "primary"},
+    {strength: "Waarna aanbod voor kosteneffectief onderhoud en doorontwikkeling", value: 98, color: "primary"}
    ];
   competitionNumber: number = 0;
 

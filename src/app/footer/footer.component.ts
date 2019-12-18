@@ -44,20 +44,20 @@ export class FooterComponent implements OnInit {
   setTiles(innerWidth){
     if(innerWidth > 800){
       this.tiles = [
-        {text: 'H A N D I H O W', cols: 3, rows: 1, color: '#3F51B5'},
-        {text: 'Capelle aan den IJssel', cols: 1, rows: 2, color: '#E91E63'},
-        {text: '+31647941981', cols: 1, rows: 1, color: '#E91E63'},
+        {text: 'H A N D I H O W', cols: 3, rows: 1, color: '#263238'},
+        {text: 'Capelle aan den IJssel', cols: 1, rows: 2, color: '#C2185B'},
+        {text: '+31647941981', cols: 1, rows: 1, color: '#C2185B'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
-        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#3F51B5'},
+        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#263238'},
         {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
       ];
     } else {
       this.tiles = [
-        {text: 'H A N D I H O W', cols: 2, rows: 1, color: '#3F51B5'},
-        {text: 'Capelle aan den IJssel', cols: 2, rows: 1, color: '#E91E63'},
-        {text: '+31647941981', cols: 2, rows: 1, color: '#E91E63'},
+        {text: 'H A N D I H O W', cols: 2, rows: 1, color: '#263238'},
+        {text: 'Capelle aan den IJssel', cols: 2, rows: 1, color: '#C2185B'},
+        {text: '+31647941981', cols: 2, rows: 1, color: '#C2185B'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
-        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#3F51B5'},
+        {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#263238'},
         {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
       ];
     }

@@ -6,7 +6,7 @@ h2, h4 {
 @media all and (min-width:1024px){
     .landing-image {
         height: calc(85vh - 50px);
-        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Flanding.png?alt=media&token=f64b2f86-0af2-4834-ae72-540be047c311');
+        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FHandihow%20(2).png?alt=media&token=da708fcc-8b74-485a-a6e1-2d67147281a4');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -25,7 +25,7 @@ h2, h4 {
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .landing-image {
         height: calc(60vh - 50px);
-        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Flanding.png?alt=media&token=f64b2f86-0af2-4834-ae72-540be047c311');
+        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FHandihow%20(2).png?alt=media&token=da708fcc-8b74-485a-a6e1-2d67147281a4');
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -42,7 +42,7 @@ h2, h4 {
 /* mobile phone */
 @media all and (max-width:768px){
     .landing-image {
-        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fbackground_mobile_header.png?alt=media&token=9be3576f-7e95-4c28-905f-6bfc75f855a6');
+        background: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FAchtergrond%20waarden%20Handihow.png?alt=media&token=b4fa5f62-379a-4fa0-b217-4cd4f6982371');
         background-repeat: no-repeat;
         background-size: cover;
     }
