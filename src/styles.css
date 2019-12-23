@@ -37,3 +37,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .secret {
     height: 75px;
 }
+.kaartje {
+  height: 300px;
+}
