@@ -1,40 +1,38 @@
-<div class="landing-image" fxLayout="row" fxLayoutAlign="space-around center" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between center" >
+<div class="landing-image" fxLayout="row" fxLayoutAlign="space-between center" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between center" >
+
+	<section>
+		<!-- <img class="kaartje animated bounceInDown delay-4s"  src="/assets/fijneFeestdagenHiHalg.png" > -->
+	</section>
 
 	<section class="about-handihow">
-		<div *ngIf="count===0" fxLayout="row" fxLayoutAlign="start end">
-			<div class="animated tada delay-1s">
-				<img src="/assets/uil_gradient.png" 
-					class="uiltje animated fadeInRightBig">
-			</div>
-			<div><img src="/assets/hi_roze.png" 
-					class="hi animated bounce"></div>
-		</div>
 		<div *ngIf="count>0" fxLayout="row" fxLayoutAlign="center center">
 			<img src="/assets/stickers/ster_zilver.png" 
 					class="secret animated heartBeat delay-1s"
 					matTooltip="Maak de pagina mooier. Los nog twee puzzels op!">
 		</div>
-		<h2 class="animated bounceInDown delay-1s">Op weg naar efficiënter onderwijs</h2>
-		<h4 class="animated fadeInDownBig delay-2s">Web- en mobiele applicaties</h4>
-		<h4 class="animated fadeInDownBig delay-2s">Cursussen in computational thinking</h4>
+		<h2 >Op weg naar efficiënter onderwijs</h2>
+		<h4 >Web- en mobiele applicaties</h4>
+		<h4 >Cursussen in computational thinking</h4>
 		<div class="button-row">
   			<a mat-raised-button color="accent" routerLink='/freebie' 
-  				class="animated lightSpeedIn delay-4s ">Download gratis lesmateriaal</a>
+  				>Download gratis lesmateriaal</a>
   		</div>
 		
 	</section>     
-		<img class="kaartje animated bounceInDown delay-4s "  src="/assets/fijneFeestdagenHiHalg.png" >
+		
 				
-	<section>
-	</section>
+	
 	
 </div>
 
-<app-services></app-services>
+<app-portfolio></app-portfolio>
 
 <app-strengths></app-strengths>
 
-<app-portfolio></app-portfolio>
+<app-services></app-services>
 
-<!-- <app-selfiespel></app-selfiespel> -->
+<app-selfiespel></app-selfiespel>
 
+<app-glowscript></app-glowscript>
+<!-- <app-skilltree></app-skilltree>
+ -->

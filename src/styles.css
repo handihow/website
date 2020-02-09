@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
@@ -31,6 +31,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .header-image-flutter {
   background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fflutter.jpg?alt=media&token=3e8b09dd-dc2f-4658-959b-a5dd6ea8c921');
+  background-size: cover;
+}
+
+.header-image-python {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fpython.jpg?alt=media&token=7f781db4-f186-4307-b0ad-2a40e4f613ed');
+  background-size: cover;
+}
+
+.header-image-new {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Flight-bulb-yellow.png?alt=media&token=37c4a832-ab54-49cd-8412-1f3e0e573bb8');
   background-size: cover;
 }
 

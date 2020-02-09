@@ -49,7 +49,7 @@ export class FooterComponent implements OnInit {
         {text: '+31647941981', cols: 1, rows: 1, color: '#C2185B'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
         {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#263238'},
-        {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
+        {text: 'BTW-nummer NL001963490B26', cols: 2, rows: 1, color: '#F44336'},
       ];
     } else {
       this.tiles = [
@@ -58,7 +58,7 @@ export class FooterComponent implements OnInit {
         {text: '+31647941981', cols: 2, rows: 1, color: '#C2185B'},
         {text: 'office@handihow.com', cols: 2, rows: 1, color: '#F44336'},
         {text: 'KvK-nummer 68836066', cols: 2, rows: 1, color: '#263238'},
-        {text: 'BTW-nummer NL173458051B01', cols: 2, rows: 1, color: '#F44336'},
+        {text: 'BTW-nummer NL001963490B26', cols: 2, rows: 1, color: '#F44336'},
       ];
     }
   }

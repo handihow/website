@@ -38,6 +38,8 @@ import { PillarsComponent } from './pillars/pillars.component';
 import { SzappComponent } from './szapp/szapp.component';
 import { SelfiethegameComponent } from './selfiethegame/selfiethegame.component';
 import { DvsComponent } from './dvs/dvs.component';
+import { GlowscriptComponent } from './glowscript/glowscript.component';
+import { SkilltreeComponent } from './skilltree/skilltree.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +62,9 @@ import { DvsComponent } from './dvs/dvs.component';
     PillarsComponent,
     SzappComponent,
     SelfiethegameComponent,
-    DvsComponent
+    DvsComponent,
+    GlowscriptComponent,
+    SkilltreeComponent
   ],
   imports: [
     BrowserModule,

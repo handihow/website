@@ -23,16 +23,18 @@
 	  
 </mat-card>
 <section>
-	<h3 *ngIf="competitionNumber>0">Aanbod van concurrent {{competitionNumber}}</h3>
-	<div *ngFor="let strength of strengths">
-		<p>{{strength.strength}}</p>
-		<mat-progress-bar color="{{strength.color}}" mode="determinate" value="{{strength.value}}"></mat-progress-bar>
-	</div>
-	<div fxLayout="row" fxLayoutAlign="center center">
-		<button mat-icon-button 
-				(click)="onRandomValues()"
-				matTooltip="Bekijk aanbod van concurrent"><mat-icon>cached</mat-icon></button>
-	</div>
+	<mat-card>
+		<h3 *ngIf="competitionNumber>0">Aanbod van concurrent {{competitionNumber}}</h3>
+		<div *ngFor="let strength of strengths">
+			<p>{{strength.strength}}</p>
+			<mat-progress-bar color="{{strength.color}}" mode="determinate" value="{{strength.value}}"></mat-progress-bar>
+		</div>
+		<div fxLayout="row" fxLayoutAlign="center center">
+			<button mat-icon-button 
+					(click)="onRandomValues()"
+					matTooltip="Bekijk aanbod van concurrent"><mat-icon>cached</mat-icon></button>
+		</div>
+	</mat-card>
 </section>
 
 </div>

@@ -1,0 +1,37 @@
+<div fxLayout="row" fxLayoutAlign="space-between stretch" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="space-between stretch" >
+	<mat-card class="cards-portfolio" fxFlex.gt-md="50">
+	  <mat-card-header>
+	    <div mat-card-avatar class="header-image-python"></div>
+	    <mat-card-title>Lagrange punten</mat-card-title>
+	    <mat-card-subtitle>VPython simulatie</mat-card-subtitle>
+	  </mat-card-header>
+	  <mat-card-content class="iframe">
+	    <iframe width="100%" height="400" [src]="url"></iframe>
+	  </mat-card-content>
+	  <mat-card-actions>
+	    <a mat-button href="https://github.com/handihow/lagrange-points/" target="_blank">Glowscript project</a>
+	  </mat-card-actions>
+	</mat-card>
+	<mat-card class="cards-portfolio" fxFlex.gt-md="50">
+	  <mat-card-header>
+	    <div mat-card-avatar class="header-image-new"></div>
+	    <mat-card-title>Waar kijk ik naar?</mat-card-title>
+	    <mat-card-subtitle>Simulatie van zwaartekracht in Python</mat-card-subtitle>
+	  </mat-card-header>
+	  <mat-card-content class="image-container">
+	    <img class="explanation-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lagrange-better.png/800px-Lagrange-better.png">
+	    <div class="text-overlay">
+		    <p>In een lagrangepunt kan een klein object zoals een ruimtestation een vaste relatieve positie behouden ten opzichte van twee hemellichamen.  Deze positie is, afhankelijk van het geval, min of meer stabiel. </p>
+		    <p>Hierbij moet de massa van het object in het lagrangepunt verwaarloosbaar zijn ten opzichte van de twee hemellichamen en moet deze massa de juiste snelheid en richting hebben. Ieder tweelichamensysteem dat draait rond een gemeenschappelijk zwaartepunt heeft vijf lagrangepunten, waarvan er drie liggen op de verbindingslijn tussen de twee hemellichamen.</p> 
+		    <p>Tweelichamensystemen waarvoor dit van toepassing is zijn bijvoorbeeld zon en aarde, de zon en een andere planeet, en de aarde en haar maan. Het kleine object kan in plaats van "stil te staan" op een lagrangepunt er ook een baan omheen beschrijven.</p>
+		    <p>De code is geschreven in Python en maakt gebruik van de VPython library om de hemellichamen grafisch weer te geven in drie dimensies.</p>
+		    <p>Je ziet dat de lagrange punten 4 en 5 (rood) zeer stabiel zijn en de andere lagrange punten niet (wit).</p>
+		    <p>Er is hier een simulatie gedaan van de zon (geel) en Jupiter (blauw). Op de L4- en L5-punten van Jupiter bevinden zich van nature al groepen planetoïden die Trojanen genoemd worden. In maart 2003 waren er al 1560 bekend.</p>
+		</div>
+	  </mat-card-content>
+	  <mat-card-actions>
+	    <a mat-button routerLink='/freebie'>Python in de klas</a>
+	  </mat-card-actions>
+	</mat-card>
+</div>
+

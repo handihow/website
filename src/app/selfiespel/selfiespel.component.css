@@ -2,17 +2,17 @@
 	margin: 10px;
 }
 
-.under-construction {
-  background-image: url('/assets/selfiethegame_logo.png');
+.selfiegamelogo {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fselfiethegame_logo.png?alt=media&token=824e5977-9a5f-4886-abc2-2e1d7dc3c063');
   background-size: cover;
 }
 
 .roadmap {
-  background-image: url('/assets/flutter.jpg');
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2Fflutter.jpg?alt=media&token=3e8b09dd-dc2f-4658-959b-a5dd6ea8c921');
   background-size: cover;
 }
 
-.header-image-new {
-  background-image: url('/assets/light-bulb-yellow.png');
-  background-size: cover;
+
+.handihow-labs {
+	margin:10px;
 }
