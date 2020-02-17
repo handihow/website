@@ -44,6 +44,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: cover;
 }
 
+.skilltree-logo {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2FSkillTree_T_icon.png?alt=media&token=61185715-f86f-4ae3-afcf-573332cdde49');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.react-logo {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/handihow-186e5.appspot.com/o/home%2F1920px-React-icon.svg.png?alt=media&token=2b66b59a-9f82-4154-bf88-086100ffc8c3');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .secret {
     height: 75px;
 }
